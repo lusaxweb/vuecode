@@ -1,0 +1,71 @@
+{
+  "name": "vuecode",
+  "version": "0.0.1",
+  "private": false,
+  "description": "view Code for Vue js",
+  "license": "MIT",
+  "author": "ldrovira <luisdanielrovira8@gmail.com>",
+  "homepage": "https://lusaxweb.github.io/vuecode.org/",
+  "repository": "lusaxweb/vuecode",
+  "main": "dist/vuecode.common.js",
+  "unpkg": "dist/vuecode.common.js",
+  "bugs": {
+    "url": "https://github.com/lusaxweb/vuecode/issues"
+  },
+  "keywords": [
+    "vuecode",
+    "vue",
+    "vuejs",
+    "vue-components",
+    "components",
+    "javascript",
+    "css"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue build -t lib src/vuecode/index.js",
+    "lint": "vue-cli-service lint",
+    "v": "npm version patch",
+    "p": "npm publish"
+  },
+  "dependencies": {
+    "escape-html": "^1.0.3",
+    "highlight.js": "^9.12.0",
+    "highlightjs": "^9.10.0",
+    "html2canvas": "^1.0.0-alpha.12",
+    "markdown-it": "^8.4.1",
+    "prismjs": "^1.14.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue": "^2.5.13",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.6",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.6",
+    "@vue/cli-service": "^3.0.0-beta.6",
+    "vue-template-compiler": "^2.5.13"
+  },
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
