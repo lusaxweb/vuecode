@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://lusaxweb.github.io/vuecode.org/public/img/vuecode.svg" alt="vuecode">
+<img src="https://github.com/lusaxweb/vuecode/blob/master/public/img/vuecode.svg" alt="vuecode">
   </p>
 
 # Browser Support
