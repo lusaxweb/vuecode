@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["vuecode"] = factory();
+		exports["vuecode.js"] = factory();
 	else
-		root["vuecode"] = factory();
+		root["vuecode.js"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -20642,6 +20642,7 @@ var highlight_md = __webpack_require__("jgMU")({
 //
 //
 //
+//
 
 
 /* harmony default export */ var vuecode = ({
@@ -20668,12 +20669,12 @@ var highlight_md = __webpack_require__("jgMU")({
     },
     codeHtml: {}
   },
+  // code:false || this.open || this.$vcoptions.open || !this.$slots.demo,
   data: function data() {
     return {
-      code: false || this.open || this.$vcoptions.open || !this.$slots.demo,
+      code: false,
       options: false,
-      theme: this.$vcoptions.theme || 'shadow',
-      color: this.$vcoptions.color || 'rgb(90, 224, 95)'
+      theme: 'shadow'
     };
   },
   mounted: function mounted() {
@@ -20722,8 +20723,8 @@ var highlight_md = __webpack_require__("jgMU")({
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-4683cfd4","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/vuecode/vuecode.vue
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"con-vuecode",class:[_vm.theme]},[_c('div',{staticClass:"con-demo"},[_c('header',{staticClass:"header"},[_c('div',{staticClass:"con-h2"},[_c('a',{attrs:{"href":'#'+_vm.resolveLink(_vm.title)}},[_vm._v("#")]),_c('h2',{domProps:{"innerHTML":_vm._s(_vm.title)}})]),_c('div',{staticClass:"con-menu-vc"},[_c('ul',[(_vm.$slots.code)?_c('li',{staticClass:"btn-code flaticon-code",class:{'activo-vc':_vm.code},on:{"click":function($event){_vm.code=!_vm.code}}}):_vm._e(),(_vm.codepen)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-3d-outlined-shape",attrs:{"target":"_blank","href":_vm.codepen}})]):_vm._e(),(_vm.jsfiddle)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-jsfiddle-logo",attrs:{"target":"_blank","href":_vm.jsfiddle}})]):_vm._e(),(_vm.github)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-github-logo",attrs:{"target":"_blank","href":_vm.github}})]):_vm._e()])])]),(_vm.$slots.demo)?_c('div',{staticClass:"demo"},[_vm._t("demo")],2):_vm._e(),_c('transition',{on:{"before-enter":_vm.beforeEnter,"enter":_vm.enter,"leave":_vm.leave}},[(_vm.$slots.code)?_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.code),expression:"code"}],ref:"code",staticClass:"con-code content"},[_vm._t("code")],2):_vm._e()])],1)])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-7c0a0a1a","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/vuecode/vuecode.vue
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"con-vuecode shadow"},[_c('div',{staticClass:"con-demo"},[_c('header',{staticClass:"header"},[_c('div',{staticClass:"con-h2"},[_c('a',{attrs:{"href":'#'+_vm.resolveLink(_vm.title)}},[_vm._v("#")]),_c('h2',{domProps:{"innerHTML":_vm._s(_vm.title)}})]),_c('div',{staticClass:"con-menu-vc"},[_c('ul',[(_vm.$slots.code)?_c('li',{staticClass:"btn-code flaticon-code",class:{'activo-vc':_vm.code},on:{"click":function($event){_vm.code=!_vm.code}}}):_vm._e(),(_vm.codepen)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-3d-outlined-shape",attrs:{"target":"_blank","href":_vm.codepen}})]):_vm._e(),(_vm.jsfiddle)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-jsfiddle-logo",attrs:{"target":"_blank","href":_vm.jsfiddle}})]):_vm._e(),(_vm.github)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-github-logo",attrs:{"target":"_blank","href":_vm.github}})]):_vm._e()])])]),(_vm.$slots.demo)?_c('div',{staticClass:"demo"},[_vm._t("demo")],2):_vm._e(),_c('transition',{on:{"before-enter":_vm.beforeEnter,"enter":_vm.enter,"leave":_vm.leave}},[(_vm.$slots.code)?_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.code),expression:"code"}],ref:"code",staticClass:"con-code content"},[_vm._t("code")],2):_vm._e()])],1)])}
 var staticRenderFns = []
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/component-normalizer.js
@@ -28147,4 +28148,4 @@ module.exports = decode;
 
 /******/ })["default"];
 });
-//# sourceMappingURL=vuecode.umd.js.map
+//# sourceMappingURL=vuecode.js.umd.js.map

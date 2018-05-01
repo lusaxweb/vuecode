@@ -1,5 +1,6 @@
 <template lang="html">
-  <div :class="[theme]" class="con-vuecode">
+  <!-- :class="[theme]" -->
+  <div  class="con-vuecode shadow">
     <div class="con-demo">
       <header class="header">
         <div class="con-h2">
@@ -87,12 +88,12 @@ export default {
     },
     codeHtml:{},
   },
+  // code:false || this.open || this.$vcoptions.open || !this.$slots.demo,
   data(){
     return {
-      code:false || this.open || this.$vcoptions.open || !this.$slots.demo,
+      code:false,
       options:false,
-      theme:this.$vcoptions.theme || 'shadow',
-      color:this.$vcoptions.color || 'rgb(90, 224, 95)'
+      theme:'shadow',
     }
   },
   mounted(){
