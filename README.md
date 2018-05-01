@@ -2,10 +2,10 @@
 <img width="400px" src="https://github.com/lusaxweb/vuecode/blob/master/public/img/vuecode.svg" alt="vuecode">
   </p>
 
-# Browser Support
+## Browser Support
 Recent versions of Firefox, Chrome, Edge, Opera and Safari. IE10+
 
-# Quick-start CDN
+## Quick-start CDN
 
 ```html
 <!DOCTYPE html>
@@ -38,12 +38,12 @@ new Vue({
 </script>
 ```
 
-# CDN
+## CDN
 
 - https://unpkg.com/vuecode.js/dist/vuecode.umd.js
 - https://unpkg.com/vuecode.js/dist/vuecode.css
 
-# install en Proyecto NPM
+## Install en Proyecto NPM
 ``` bash
 # npm
 npm install vuecode.js
@@ -58,9 +58,9 @@ yarn add vuecode.js
 
 ```javascript
 import Vue from 'vue'
-import Vuecode from 'vuecode'
+import Vuecode from 'vuecode.js'
 
-import 'vuecode/dist/vuecode.css'
+import 'vuecode.js/dist/vuecode.css'
 Vue.use(Vuecode)
 ```
 ## Become a Patron
