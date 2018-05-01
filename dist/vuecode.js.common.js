@@ -16806,13 +16806,6 @@ module.exports = function replace(state) {
 
 /***/ }),
 
-/***/ "ak+3":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "auBH":
 /***/ (function(module, exports) {
 
@@ -20637,6 +20630,10 @@ var highlight_md = __webpack_require__("jgMU")({
 
 /* harmony default export */ var vuecode = ({
   props: {
+    md: {
+      default: false,
+      type: Boolean
+    },
     title: {
       type: String,
       defaul: ''
@@ -20677,16 +20674,18 @@ var highlight_md = __webpack_require__("jgMU")({
     // if (this.open || options.open) {
     //   this.code = true
     // }
-    var text = this.$refs.code.textContent,
-        code;
+    if (!this.md) {
+      console.log("enyro en render");
+      var text = this.$refs.code.textContent,
+          code;
 
-    if (this.codeHtml) {
-      var codeHtml = this.codeHtml.replace(/'/g, '"');
-      this.$refs.codex.innerHTML = highlight.render(codeHtml);
-    } else {
-      code = highlight.render(text); // console.log(code);
-
-      this.$refs.code.innerHTML = code;
+      if (this.codeHtml) {
+        var codeHtml = this.codeHtml.replace(/'/g, '"');
+        this.$refs.codex.innerHTML = highlight.render(codeHtml);
+      } else {
+        code = highlight.render(text);
+        this.$refs.code.innerHTML = code;
+      }
     }
   },
   computed: {
@@ -20714,7 +20713,7 @@ var highlight_md = __webpack_require__("jgMU")({
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-3ec6cd5c","hasScoped":false,"optionsId":"2","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/vuecode/vuecode.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-7ffb4fb6","hasScoped":false,"optionsId":"1","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/vuecode/vuecode.vue
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"con-vuecode shadow"},[_c('div',{staticClass:"con-demo"},[_c('header',{staticClass:"header"},[_c('div',{staticClass:"con-h2"},[_c('a',{attrs:{"href":'#'+_vm.resolveLink(_vm.title)}},[_vm._v("#")]),_c('h2',{domProps:{"innerHTML":_vm._s(_vm.title)}})]),_c('div',{staticClass:"con-menu-vc"},[_c('ul',[(_vm.$slots.code)?_c('li',{staticClass:"btn-code flaticon-code",class:{'activo-vc':_vm.code},on:{"click":function($event){_vm.code=!_vm.code}}}):_vm._e(),(_vm.codepen)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-3d-outlined-shape",attrs:{"target":"_blank","href":_vm.codepen}})]):_vm._e(),(_vm.jsfiddle)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-jsfiddle-logo",attrs:{"target":"_blank","href":_vm.jsfiddle}})]):_vm._e(),(_vm.github)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-github-logo",attrs:{"target":"_blank","href":_vm.github}})]):_vm._e()])])]),(_vm.$slots.demo)?_c('div',{staticClass:"demo"},[_vm._t("demo")],2):_vm._e(),_c('transition',{on:{"before-enter":_vm.beforeEnter,"enter":_vm.enter,"leave":_vm.leave}},[(_vm.$slots.code)?_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.code),expression:"code"}],ref:"code",staticClass:"con-code content"},[_vm._t("code")],2):_vm._e()])],1)])}
 var staticRenderFns = []
 
@@ -20823,7 +20822,7 @@ function normalizeComponent (
 
 // CONCATENATED MODULE: ./src/vuecode/vuecode.vue
 function injectStyle (context) {
-  __webpack_require__("ak+3")
+  __webpack_require__("jmn8")
 }
 /* script */
 
@@ -21404,6 +21403,13 @@ module.exports = function(hljs) {
     ]
   };
 };
+
+/***/ }),
+
+/***/ "jmn8":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

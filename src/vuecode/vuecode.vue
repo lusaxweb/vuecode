@@ -111,6 +111,7 @@ export default {
     // }
 
     if(!this.md){
+      console.log("enyro en render");
       let text = this.$refs.code.textContent, code
       if(this.codeHtml){
 
