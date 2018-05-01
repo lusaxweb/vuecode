@@ -65,6 +65,10 @@ import md from './highlight.js'
 
 export default {
   props:{
+    md:{
+      default:false,
+      type:Boolean
+    },
     title:{
       type:String,
       defaul:'',
@@ -106,18 +110,17 @@ export default {
     //   this.code = true
     // }
 
+    if(!md){
+      let text = this.$refs.code.textContent, code
+      if(this.codeHtml){
 
-    let text = this.$refs.code.textContent, code
-    if(this.codeHtml){
+        let codeHtml = this.codeHtml.replace(/'/g,'"')
+        this.$refs.codex.innerHTML = md.render(codeHtml);
 
-      let codeHtml = this.codeHtml.replace(/'/g,'"')
-      this.$refs.codex.innerHTML = md.render(codeHtml);
-
-    } else {
-      code = md.render(text);
-      // console.log(code);
-      this.$refs.code.innerHTML = code
-
+      } else {
+        code = md.render(text);
+        this.$refs.code.innerHTML = code
+      }
     }
   },
   computed:{
