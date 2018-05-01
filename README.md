@@ -11,8 +11,8 @@ Recent versions of Firefox, Chrome, Edge, Opera and Safari. IE10+
 <!DOCTYPE html>
 <title>vuecode demo</title>
 <script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/vuecode/dist/vuecode.umd.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/vuecode/dist/vuecode.css">
+<script src="https://unpkg.com/vuecode.js/dist/vuecode.umd.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/vuecode.js/dist/vuecode.css">
 
 <div id="app">
   <vuecode title="Add new proyect vuecode">
@@ -40,18 +40,18 @@ new Vue({
 
 # CDN
 
-- https://unpkg.com/vuecode/dist/vuecode.umd.js
-- https://unpkg.com/vuecode/dist/vuecode.css
+- https://unpkg.com/vuecode.js/dist/vuecode.umd.js
+- https://unpkg.com/vuecode.js/dist/vuecode.css
 
 # install en Proyecto NPM
 ``` bash
 # npm
-npm install vuecode
+npm install vuecode.js
 ```
 
 ``` bash
 # yarn
-yarn add vuecode
+yarn add vuecode.js
 ```
 
 ## Use
@@ -65,7 +65,7 @@ Vue.use(Vuecode)
 ```
 ## Become a Patron
 
-Vuenut is an open source MIT project if you want to contribute to keep improving, If you are interested in supporting this project, please consider becoming a patron. [[patron](https://www.patreon.com/bePatron?c=1567892)]
+Vuecode is an open source MIT project if you want to contribute to keep improving, If you are interested in supporting this project, please consider becoming a patron. [[patron](https://www.patreon.com/bePatron?c=1567892)]
 
 ## Lusaxweb
 
