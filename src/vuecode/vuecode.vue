@@ -110,7 +110,7 @@ export default {
     //   this.code = true
     // }
 
-    if(!md){
+    if(!this.md){
       let text = this.$refs.code.textContent, code
       if(this.codeHtml){
 
