@@ -1,5 +1,4 @@
 <template lang="html">
-  <!-- :class="[theme]" -->
   <div  class="con-vuecode shadow">
     <div class="con-demo">
       <header class="header">
@@ -88,15 +87,16 @@ export default {
     },
     codeHtml:{},
   },
-  // code:false || this.open || this.$vcoptions.open || !this.$slots.demo,
   data(){
     return {
       code:false,
       options:false,
       theme:'shadow',
+      color:'rgb(90, 224, 95)'
     }
   },
   mounted(){
+    // || this.open || this.$vcoptions.open || !this.$slots.demo
     // options globales
     // let options = this.options
     //
@@ -115,7 +115,7 @@ export default {
 
     } else {
       code = md.render(text);
-      console.log(code);
+      // console.log(code);
       this.$refs.code.innerHTML = code
 
     }
