@@ -26,7 +26,8 @@
     "build": "vue build -t lib src/vuecode/index.js --name vuecode",
     "lint": "vue-cli-service lint",
     "v": "npm version patch",
-    "p": "npm publish"
+    "p": "npm publish",
+    "deploy": "npm run build & git add . & git commit -m 'deploy' & npm run v & npm run p"
   },
   "dependencies": {
     "escape-html": "^1.0.3",
