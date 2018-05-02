@@ -70,7 +70,7 @@ export default {
     },
     title:{
       type:String,
-      defaul:'',
+      default:'',
     },
     open:{
       type:Boolean,
@@ -100,7 +100,7 @@ export default {
   mounted(){
     this.code = this.open || this.$vcoptions.open || !this.$slots.demo || false
     this.theme = this.$vcoptions.theme || 'shadow'
-    console.log(this.$vcoptions);
+    console.log("$vcoptions",this.$vcoptions);
     // || this.open || this.$vcoptions.open || !this.$slots.demo
     // options globales
     // let options = this.options
@@ -173,7 +173,7 @@ export default {
 .shadow-vc
   .con-demo
     box-shadow: 0px 5px 17px 0px rgba(0, 0, 0, 0.080);
-    width: calc(100% - 20px)
+    width: calc(100% - 20px) !important
     margin-left: 10px;
     .con-code
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.250);

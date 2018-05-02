@@ -4,7 +4,7 @@ const Vuecode = {
   install(Vue, options) {
     Vue.component('vuecode',components)
 
-    Vue.prototype.$vcoptions = options
+    Vue.prototype.$vcoptions = options || {}
   }
 }
 if (typeof window !== 'undefined' && window.Vue) {
