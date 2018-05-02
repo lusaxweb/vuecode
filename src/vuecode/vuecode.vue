@@ -92,7 +92,7 @@ export default {
   },
   data(){
     return {
-      code:false || this.open || this.$vcoptions.open || !this.$slots.demo,
+      code:this.open || this.$vcoptions.open || !this.$slots.demo || false,
       options:false,
       theme:this.$vcoptions.theme || 'shadow',
     }
@@ -179,7 +179,7 @@ export default {
 
 .flat {
   background: rgb(255, 255, 255);
-  width: 100% !important;
+  width: 100% !important
 }
 
 
