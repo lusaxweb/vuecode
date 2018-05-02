@@ -3,7 +3,7 @@
   </p>
 
 ## Browser Support
-Recent versions of Firefox, Chrome, Edge, Opera and Safari. IE10+
+Recent versions of **Firefox**, **Chrome**, **Edge**, **Opera** and **Safari**. **IE10**+
 
 ## Quick-start CDN
 
