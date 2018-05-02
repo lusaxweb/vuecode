@@ -7,8 +7,8 @@
   "author": "ldrovira <luisdanielrovira8@gmail.com>",
   "homepage": "https://lusaxweb.github.io/vuecode.org/",
   "repository": "lusaxweb/vuecode",
-  "main": "dist/vuecode.js.common.js",
-  "unpkg": "dist/vuecode.js.common.js",
+  "main": "dist/vuecode.common.js",
+  "unpkg": "dist/vuecode.common.js",
   "bugs": {
     "url": "https://github.com/lusaxweb/vuecode/issues"
   },
