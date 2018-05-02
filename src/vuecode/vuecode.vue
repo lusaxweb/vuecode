@@ -1,5 +1,5 @@
 <template lang="html">
-  <div  class="con-vuecode shadow">
+  <div  class="con-vuecode shadow-vc">
     <div class="con-demo">
       <header class="header">
         <div class="con-h2">
@@ -169,7 +169,7 @@ export default {
 // themes
 
 // default theme
-.shadow
+.shadow-vc
   .con-demo
     box-shadow: 0px 5px 17px 0px rgba(0, 0, 0, 0.080);
     .con-code

@@ -25,8 +25,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue build -t lib src/vuecode/index.js --name vuecode",
     "lint": "vue-cli-service lint",
-    "v": "git add . & git commit -m ",
-
+    "v": "npm version patch",
     "p": "npm publish"
   },
   "dependencies": {
