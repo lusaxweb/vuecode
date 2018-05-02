@@ -5203,13 +5203,6 @@ module.exports = function(hljs) {
 
 /***/ }),
 
-/***/ "9hxm":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "9v3E":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20664,10 +20657,9 @@ var highlight_md = __webpack_require__("jgMU")({
   },
   data: function data() {
     return {
-      code: false,
+      code: false || this.open || this.$vcoptions.open || !this.$slots.demo,
       options: false,
-      theme: 'shadow',
-      color: 'rgb(90, 224, 95)'
+      theme: this.$vcoptions.theme || 'shadow'
     };
   },
   mounted: function mounted() {
@@ -20719,8 +20711,8 @@ var highlight_md = __webpack_require__("jgMU")({
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-edadad54","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/vuecode/vuecode.vue
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"con-vuecode shadow-vc"},[_c('div',{staticClass:"con-demo"},[_c('header',{staticClass:"header"},[_c('div',{staticClass:"con-h2"},[_c('h2',{domProps:{"innerHTML":_vm._s(_vm.title)}})]),_c('div',{staticClass:"con-menu-vc"},[_c('ul',[(_vm.$slots.code)?_c('li',{staticClass:"btn-code flaticon-code",class:{'activo-vc':_vm.code},on:{"click":function($event){_vm.code=!_vm.code}}}):_vm._e(),(_vm.codepen)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-3d-outlined-shape",attrs:{"target":"_blank","href":_vm.codepen}})]):_vm._e(),(_vm.jsfiddle)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-jsfiddle-logo",attrs:{"target":"_blank","href":_vm.jsfiddle}})]):_vm._e(),(_vm.github)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-github-logo",attrs:{"target":"_blank","href":_vm.github}})]):_vm._e()])])]),(_vm.$slots.demo)?_c('div',{staticClass:"demo"},[_vm._t("demo")],2):_vm._e(),_c('transition',{on:{"before-enter":_vm.beforeEnter,"enter":_vm.enter,"leave":_vm.leave}},[(_vm.$slots.code)?_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.code),expression:"code"}],ref:"code",staticClass:"con-code content-vc"},[_vm._t("code")],2):_vm._e()])],1)])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-4b016abd","hasScoped":false,"optionsId":"1","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/vuecode/vuecode.vue
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"con-vuecode",class:{'shadow-vc':_vm.theme=='shadow','flat-vc':_vm.theme=='flat','line-vc':_vm.theme=='line'}},[_c('div',{staticClass:"con-demo"},[_c('header',{staticClass:"header"},[_c('div',{staticClass:"con-h2"},[_c('h2',{domProps:{"innerHTML":_vm._s(_vm.title)}})]),_c('div',{staticClass:"con-menu-vc"},[_c('ul',[(_vm.$slots.code)?_c('li',{staticClass:"btn-code flaticon-code",class:{'activo-vc':_vm.code},on:{"click":function($event){_vm.code=!_vm.code}}}):_vm._e(),(_vm.codepen)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-3d-outlined-shape",attrs:{"target":"_blank","href":_vm.codepen}})]):_vm._e(),(_vm.jsfiddle)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-jsfiddle-logo",attrs:{"target":"_blank","href":_vm.jsfiddle}})]):_vm._e(),(_vm.github)?_c('li',{staticClass:"btn-code"},[_c('a',{staticClass:"flaticon-github-logo",attrs:{"target":"_blank","href":_vm.github}})]):_vm._e()])])]),(_vm.$slots.demo)?_c('div',{staticClass:"demo"},[_vm._t("demo")],2):_vm._e(),_c('transition',{on:{"before-enter":_vm.beforeEnter,"enter":_vm.enter,"leave":_vm.leave}},[(_vm.$slots.code)?_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.code),expression:"code"}],ref:"code",staticClass:"con-code content-vc"},[_vm._t("code")],2):_vm._e()])],1)])}
 var staticRenderFns = []
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/component-normalizer.js
@@ -20828,7 +20820,7 @@ function normalizeComponent (
 
 // CONCATENATED MODULE: ./src/vuecode/vuecode.vue
 function injectStyle (context) {
-  __webpack_require__("9hxm")
+  __webpack_require__("jmn8")
 }
 /* script */
 
@@ -21409,6 +21401,13 @@ module.exports = function(hljs) {
     ]
   };
 };
+
+/***/ }),
+
+/***/ "jmn8":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

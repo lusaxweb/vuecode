@@ -1,5 +1,5 @@
 <template lang="html">
-  <div  class="con-vuecode shadow-vc">
+  <div :class="{'shadow-vc':theme=='shadow','flat-vc':theme=='flat','line-vc':theme=='line'}" class="con-vuecode">
     <div class="con-demo">
       <header class="header">
         <div class="con-h2">
@@ -92,10 +92,9 @@ export default {
   },
   data(){
     return {
-      code:false,
+      code:false || this.open || this.$vcoptions.open || !this.$slots.demo,
       options:false,
-      theme:'shadow',
-      color:'rgb(90, 224, 95)'
+      theme:this.$vcoptions.theme || 'shadow',
     }
   },
   mounted(){
@@ -171,21 +170,22 @@ export default {
 .shadow-vc
   .con-demo
     box-shadow: 0px 5px 17px 0px rgba(0, 0, 0, 0.080);
+    width: calc(100% - 20px)
+    margin-left: 10px;
     .con-code
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.250);
       border-radius: 6px;
       display: block;
 
-.line {
-  background: rgb(25, 12, 208);
+.flat {
+  background: rgb(255, 255, 255);
+  width: 100% !important;
 }
 
 
 //defaul values
 
 .con-code
-  width: calc(100% - 20px)
-  margin-left: 10px;
   display: block;
   margin-bottom: 10px;
   transition: all .250s ease;
