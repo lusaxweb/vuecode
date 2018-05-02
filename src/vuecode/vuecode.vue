@@ -100,16 +100,6 @@ export default {
   mounted(){
     this.code = this.open || this.$vcoptions.open || !this.$slots.demo || false
     this.theme = this.$vcoptions.theme || 'shadow'
-    console.log("$vcoptions",this.$vcoptions);
-    // || this.open || this.$vcoptions.open || !this.$slots.demo
-    // options globales
-    // let options = this.options
-    //
-    // console.log(this.options);
-    // // change value code if open
-    // if (this.open || options.open) {
-    //   this.code = true
-    // }
 
     if(!this.md){
       console.log("enyro en render");
@@ -180,10 +170,16 @@ export default {
       border-radius: 6px;
       display: block;
 
-.flat {
+// flat theme
+
+.flat
   background: rgb(255, 255, 255);
-  width: 100% !important
-}
+  width: 100% !important;
+  padding: 0px !important;
+  .content-vc
+    width: calc(100% - 20px)
+    padding-left: 10px;
+    padding-right: 10px;
 
 
 //defaul values
