@@ -172,7 +172,7 @@ export default {
 
 // flat theme
 
-.flat
+.flat-vc
   background: rgb(255, 255, 255);
   width: 100% !important;
   padding: 0px !important;
