@@ -178,8 +178,7 @@ export default {
   padding: 0px !important;
   .content-vc
     width: calc(100% - 20px)
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
 
 
 //defaul values
