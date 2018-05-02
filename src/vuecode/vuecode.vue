@@ -92,11 +92,15 @@ export default {
   },
   data(){
     return {
+      code:false,
       options:false,
-      theme:this.$vcoptions.theme || 'shadow',
+      theme:'shadow',
     }
   },
   mounted(){
+    this.code = this.open || this.$vcoptions.open || !this.$slots.demo || false
+    this.theme = this.$vcoptions.theme || 'shadow'
+    console.log(this.$vcoptions);
     // || this.open || this.$vcoptions.open || !this.$slots.demo
     // options globales
     // let options = this.options
@@ -122,8 +126,10 @@ export default {
     }
   },
   computed:{
-    code(){
-      return this.open || this.$vcoptions.open || !this.$slots.demo || false
+    mdx(){
+
+      var result = md.render(this.$slots.code[0].children[0].text);
+      return result
     }
   },
   methods:{
