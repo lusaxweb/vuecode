@@ -92,7 +92,6 @@ export default {
   },
   data(){
     return {
-      code:this.open || this.$vcoptions.open || !this.$slots.demo || false,
       options:false,
       theme:this.$vcoptions.theme || 'shadow',
     }
@@ -123,10 +122,8 @@ export default {
     }
   },
   computed:{
-    mdx(){
-
-      var result = md.render(this.$slots.code[0].children[0].text);
-      return result
+    code(){
+      return this.open || this.$vcoptions.open || !this.$slots.demo || false
     }
   },
   methods:{
