@@ -49,7 +49,7 @@
     v-on:enter="enter"
     v-on:leave="leave"
     >
-    <div v-if="$slots.code" v-show="code" ref="code" class="con-code content">
+    <div v-if="$slots.code" v-show="code" ref="code" class="con-code content-vc">
       <slot name="code">
 
       </slot>
@@ -339,7 +339,7 @@ export default {
       transform: rotate(-42deg) translate(0px,-3px);
       background: rgb(120, 120, 120) !important
 // code styles
-.content
+.content-vc
   code
     color lighten($textColor, 20%)
     padding 0.25rem 0.5rem
@@ -348,7 +348,7 @@ export default {
     background-color rgba(27,31,35,0.05)
     border-radius 3px
 
-.content
+.content-vc
   pre, pre[class*="language-"]
     background-color $codeBgColor
     line-height 1.4
@@ -375,57 +375,6 @@ export default {
     display block
     margin 0 -1.5rem
     padding 0 1.5rem
-
-pre[class="language-js"], pre[class="language-javascript"]
-  &:before
-    content "js"
-
-pre[class="language-html"], pre[class="language-markup"]
-  &:before
-    content "html"
-
-pre[class="language-markdown"], pre[class="language-md"]
-  &:before
-    content "md"
-
-pre[class="language-vue"]:before
-  content "vue"
-
-pre[class="language-css"]:before
-  content "css"
-
-pre[class="language-sass"]:before
-  content "sass"
-
-pre[class="language-less"]:before
-  content "less"
-
-pre[class="language-scss"]:before
-  content "scss"
-
-pre[class="language-stylus"]:before
-  content "stylus"
-
-pre[class="language-json"]:before
-  content "json"
-
-pre[class="language-ruby"]:before
-  content "rb"
-
-pre[class="language-python"]:before
-  content "py"
-
-pre[class="language-go"]:before
-  content "go"
-
-pre[class="language-java"]:before
-  content "java"
-
-pre[class="language-c"]:before
-  content "c"
-
-pre[class="language-bash"]:before
-  content "sh"
 
   .custom-block
     .custom-block-title
