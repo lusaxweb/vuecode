@@ -7,15 +7,15 @@
         </div>
         <div class="con-menu-vc">
         <ul>
-          <li :class="{'activo-vc':code}" v-if="$slots.code" @click="code=!code"  class="btn-code flaticon-code"></li>
+          <li :class="{'activo-vc':code}" v-if="$slots.code" @click="code=!code"  class="btn-code flaticon2-code-vc"></li>
           <li v-if="codepen" class="btn-code">
-            <a target="_blank" :href="codepen" class="flaticon-3d-outlined-shape"></a>
+            <a target="_blank" :href="codepen" class="flaticon2-3d-outlined-shape-vc"></a>
           </li>
           <li v-if="jsfiddle" class="btn-code">
-            <a target="_blank" :href="jsfiddle" class="flaticon-jsfiddle-logo"></a>
+            <a target="_blank" :href="jsfiddle" class="flaticon2-jsfiddle-logo-vc"></a>
           </li>
           <li v-if="github" class="btn-code">
-            <a target="_blank" :href="github" class="flaticon-github-logo"></a>
+            <a target="_blank" :href="github" class="flaticon2-github-logo-vc"></a>
           </li>
         </ul>
 
@@ -27,11 +27,11 @@
             <span class="c3"></span>
           </button>
           <ul v-if="options">
-            <li class="flaticon-arrows">
+            <li class="flaticon2-arrows">
             </li>
-            <li class="flaticon-copy-content">
+            <li class="flaticon2-copy-content">
             </li>
-            <li class="flaticon-invert">
+            <li class="flaticon2-invert">
             </li>
           </ul>
         </div> -->

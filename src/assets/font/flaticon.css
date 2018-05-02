@@ -4,7 +4,7 @@
   	*/
 
 @font-face {
-  font-family: "Flaticon";
+  font-family: "Flaticon2";
   src: url("./Flaticon.eot");
   src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
        url("./Flaticon.woff") format("woff"),
@@ -16,25 +16,25 @@
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: "Flaticon";
+    font-family: "Flaticon2";
     src: url("./Flaticon.svg#Flaticon") format("svg");
   }
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-  font-family: Flaticon;
+[class^="flaticon2-"]:before, [class*=" flaticon2-"]:before,
+[class^="flaticon2-"]:after, [class*=" flaticon2-"]:after {
+  font-family: Flaticon2;
         font-size: 21px;
 font-style: normal;
 
 }
 
-.flaticon-invert:before { content: "\f100"; }
-.flaticon-copy-content:before { content: "\f101"; }
-.flaticon-arrows:before { content: "\f102"; }
-.flaticon-minimize:before { content: "\f103"; }
-.flaticon-menu:before { content: "\f104"; }
-.flaticon-jsfiddle-logo:before { content: "\f105"; }
-.flaticon-code:before { content: "\f106"; }
-.flaticon-3d-outlined-shape:before { content: "\f107"; }
-.flaticon-github-logo:before { content: "\f108"; }
+.flaticon2-invert-vc:before { content: "\f100"; }
+.flaticon2-copy-content-vc:before { content: "\f101"; }
+.flaticon2-arrows-vc:before { content: "\f102"; }
+.flaticon2-minimize-vc:before { content: "\f103"; }
+.flaticon2-menu-vc:before { content: "\f104"; }
+.flaticon2-jsfiddle-logo-vc:before { content: "\f105"; }
+.flaticon2-code-vc:before { content: "\f106"; }
+.flaticon2-3d-outlined-shape-vc:before { content: "\f107"; }
+.flaticon2-github-logo-vc:before { content: "\f108"; }
