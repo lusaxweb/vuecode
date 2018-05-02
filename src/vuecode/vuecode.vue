@@ -2,8 +2,7 @@
   <div  class="con-vuecode shadow-vc">
     <div class="con-demo">
       <header class="header">
-        <div v-if="title" class="con-h2">
-          <a :href="'#'+resolveLink(title)">#</a>
+        <div class="con-h2">
           <h2 v-html="title"></h2>
         </div>
         <div class="con-menu-vc">
