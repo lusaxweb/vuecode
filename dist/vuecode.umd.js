@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["vuecode.js"] = factory();
+		exports["vuecode"] = factory();
 	else
-		root["vuecode.js"] = factory();
+		root["vuecode"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -28152,4 +28152,4 @@ module.exports = decode;
 
 /******/ })["default"];
 });
-//# sourceMappingURL=vuecode.js.umd.js.map
+//# sourceMappingURL=vuecode.umd.js.map

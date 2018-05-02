@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue build -t lib src/vuecode/index.js",
+    "build": "vue build -t lib src/vuecode/index.js --name vuecode",
     "lint": "vue-cli-service lint",
     "v": "npm version patch",
     "p": "npm publish"
