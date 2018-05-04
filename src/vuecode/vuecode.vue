@@ -38,7 +38,7 @@
         </div>
       </header>
 
-      <div v-if="$slots.demo" class="demo">
+      <div :class="{'centex':center}" v-if="$slots.demo" class="demo">
         <slot name="demo">
         </slot>
       </div>
@@ -64,6 +64,10 @@ import md from './highlight.js'
 
 export default {
   props:{
+    center:{
+      default:false,
+      type:Boolean
+    },
     md:{
       default:false,
       type:Boolean
@@ -157,6 +161,11 @@ export default {
   transform: matrix(10deg);
 }
 
+.centex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 // themes
 
 // default theme
