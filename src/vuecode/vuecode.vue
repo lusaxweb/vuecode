@@ -211,6 +211,8 @@ export default {
   padding: 10px
   box-sizing: border-box;
   margin-top: 10px;
+  li
+    list-style: none !important;
   .con-demo
     width: 100%
     position: relative;
