@@ -70,3 +70,7 @@ Vuecode is an open source MIT project if you want to contribute to keep improvin
 ## Lusaxweb
 
 This library was created and is supported by [Lusaxweb](http://www.lusaxweb.com.ve/)
+
+## License
+
+[MIT](https://github.com/lusaxweb/vuecode/blob/master/LICENSE)
